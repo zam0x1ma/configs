@@ -104,4 +104,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin:/home/maxi/go/bin
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+export PATH=$PATH:$HOME/.dotnet
