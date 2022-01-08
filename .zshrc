@@ -105,4 +105,8 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-export PATH=$PATH:$HOME/.dotnet
+
+export DOTNET_ROOT=$HOME/.dotnet
+export PATH=$PATH:$DOTNET_ROOT
+export PATH=$PATH:$DOTNET_ROOT/tools
+export PATH=$PATH:/opt/mssql-tools/bin
