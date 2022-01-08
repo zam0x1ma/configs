@@ -19,6 +19,10 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'alvan/vim-closetag'
 " Plugin 'jiangmiao/auto-pairs'
 Plugin 'morhetz/gruvbox'
+" Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'mlaursen/vim-react-snippets'
+Plugin 'OmniSharp/omnisharp-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -47,10 +51,10 @@ autocmd Filetype css setlocal tabstop=2 shiftwidth=2
 " endif
 
 set background=dark
-let g:gruvbox_contrast_dark = "hard"
+"let g:gruvbox_contrast_dark="hard"
 colorscheme gruvbox
 
-let g:livepreview_previewer = 'okular'
+let g:livepreview_previewer='okular'
 
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
@@ -58,4 +62,19 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
 " File extensions where vim-closetag plugin is enabled
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.ts'
+let g:closetag_filenames='*.html,*.xhtml,*.phtml,*.cshtml,*.js,*.ts'
+
+let mapleader=" "
+
+let NERDTreeDirArrows=1
+let NERDTreeMinimalUI=1
+let NERDTreeShowHidden=1
+let NERDTreeShowLineNumbers=1
+
+nnoremap <leader>nff :NERDTreeFocus<CR>
+nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>nn :NERDTreeToggle<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
+
+" Add semicolon
+nnoremap <Leader>; $a;<Esc>
