@@ -1,3 +1,5 @@
+require('rust-tools').setup({})
+
 -- MAPPINGS
 local map = require("core.utils").map
 

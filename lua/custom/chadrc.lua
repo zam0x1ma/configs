@@ -1,4 +1,5 @@
 local M = {}
+local userPlugins = require "custom.plugins"
 
 M.options = {
   relativenumber = true,
@@ -6,13 +7,14 @@ M.options = {
 }
 
 M.ui = {
-   theme = "onedark",
+  theme = "onedark",
 }
 
 M.plugins = {
-   status = {
-     dashboard = true,
-   },
+  install = userPlugins,
+  status = {
+    dashboard = true,
+  },
 }
 
 return M
