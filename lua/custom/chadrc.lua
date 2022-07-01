@@ -1,20 +1,14 @@
 local M = {}
-local userPlugins = require "custom.plugins"
 
-M.options = {
-  relativenumber = true,
-  cursorline = true,
-}
+local opt = vim.opt
+
+opt.relativenumber = true
+opt.cursorline = true
 
 M.ui = {
   theme = "onedark",
 }
 
-M.plugins = {
-  install = userPlugins,
-  status = {
-    dashboard = true,
-  },
-}
+M.mappings = require "custom.mappings"
 
 return M
