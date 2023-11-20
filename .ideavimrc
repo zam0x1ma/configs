@@ -1,0 +1,7 @@
+set number
+set relativenumber
+
+let mapleader=" "
+
+nnoremap <Leader>; $a;<Esc>
+nnoremap <Leader>, $a,<Esc>
